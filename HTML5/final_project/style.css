@@ -6,22 +6,27 @@
 
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
-	padding: 2em;
+	padding: 1.5em;
 }
 
 .left-nav,
 .right-nav {
 	display: flex;
 	align-items: center;
+	gap: 20px;
+	padding: 0 15px 0 15px;
 }
 
 .left-nav ul {
 	display: flex;
+	gap: 25px;
+	font-weight: 600;
 }
 
 ul,
@@ -33,9 +38,17 @@ nav button {
 	background-color: #2e844a;
 	color: #ffffff;
 	cursor: pointer;
-	height: 50px;
-	width: 150px;
+	height: 45px;
+	width: 130px;
 	outline: unset;
 	border: 1px solid;
-	border-radius: 2.5px;
+	border-radius: 4.5px;
 }
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: center;
+}
+/* end of navbar */
