@@ -117,3 +117,12 @@ h1 {
 	font-size: 1.5em;
 	margin-top: 5px;
 }
+
+/* footer */
+footer {
+	background-color: rgba(11, 92, 171, 1);
+	padding: 2em;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 25vh;
+}
