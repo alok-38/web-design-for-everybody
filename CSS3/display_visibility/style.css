@@ -1,0 +1,22 @@
+span {
+	background-color: #00ff00;
+	height: 50px;
+	width: 75px;
+	display: block;
+	margin-bottom: 15px;
+}
+
+div {
+	background-color: #00ffff;
+	height: 100px;
+	width: 45%;
+	margin-bottom: 15px;
+	display: block;
+}
+
+p {
+	background-color: #ff00ff;
+	width: 200px;
+	height: 100px;
+	clear: both;
+}
