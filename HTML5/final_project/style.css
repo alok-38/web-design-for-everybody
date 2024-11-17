@@ -15,6 +15,10 @@ nav {
 	padding: 1.5em;
 }
 
+nav a:hover {
+	color: #0176d3;
+}
+
 .left-nav,
 .right-nav {
 	display: flex;
@@ -34,8 +38,8 @@ li {
 	list-style-type: none;
 }
 
-nav button {
-	background-color: #2e844a;
+nav button,
+.left-div button {
 	color: #ffffff;
 	cursor: pointer;
 	height: 45px;
@@ -45,10 +49,71 @@ nav button {
 	border-radius: 4.5px;
 }
 
+nav button {
+	background-color: #2e844a;
+}
+
 .contact {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
 	align-items: center;
 }
+
 /* end of navbar */
+
+/* main */
+main {
+	padding: 1.5em;
+}
+
+.first-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
+}
+
+.left-div {
+	flex: 1;
+}
+
+.right-div {
+	flex: 1;
+}
+
+.right-div img {
+	max-width: 900px;
+	height: auto;
+}
+
+.left-div .trial {
+	background-color: #0176d3;
+}
+
+.buttons {
+	display: flex;
+	gap: 25px;
+	margin-top: 50px;
+}
+
+.left-div .demo {
+	background: transparent;
+	border: solid 2px #0176d3;
+	color: #0176d3;
+}
+
+.left-div .demo:hover {
+	background-color: #d8edff;
+}
+
+h1 {
+	font-size: 4.5em;
+	color: #0176d3;
+}
+
+.left-div p {
+	font-size: 1.5em;
+	margin-top: 5px;
+}
