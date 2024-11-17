@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+}
+
+body {
+	font-size: 100%;
+	line-height: 1;
+	padding: 15px;
+}
+
+h1,
+h2 {
+	margin: 15px 0 15px 0;
+}
+
+section {
+	margin-bottom: 15px;
+	width: 100%;
+	column-count: 3;
+	column-gap: 15px;
+	background-color: azure;
+}

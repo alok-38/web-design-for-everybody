@@ -1,0 +1,17 @@
+nav {
+	background-color: blueviolet;
+	padding: 1rem;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+ul a {
+	color: #ffffff;
+	text-decoration: none;
+}
