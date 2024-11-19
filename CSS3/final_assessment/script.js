@@ -3,6 +3,5 @@ document.addEventListener("DOMContentLoaded", function() {
 	const dateSpanEl = document.getElementById('date');
     // Get the current year
 	const currentYear = new Date().getFullYear();
-	console.log(currentYear);
-
+    dateSpanEl.textContent = currentYear;
 });
