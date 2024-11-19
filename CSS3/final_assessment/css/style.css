@@ -27,10 +27,22 @@ header {
 header ul {
 	display: flex;
 	margin-bottom: 15px;
+	justify-content:end;
+	gap: 25px;
+}
+
+header ul li a {
+	letter-spacing: 1px;
+}
+
+header ul a:hover {
+	border-bottom: 2px solid #ffffff;
 }
 
 header a {
 	color: #ffffff;
+	text-decoration: none;
+	font-weight: 600;
 }
 
 header .skip {
@@ -41,11 +53,23 @@ header .skip {
 	bottom: 1px;
 	text-decoration: none;
 	border-bottom: 2px solid #ffffff;
-	width: 9%;
+	width: 14%;
+	font-size: 1.5em;
+}
+
+header .skip:hover {
+	background-color: aliceblue;
+	color: black;
 }
 
 nav {
 	margin-bottom :auto;
+}
+
+h1 {
+	margin-bottom: 15px;
+	font-size: 4em;
+	text-align: center;
 }
 
 /* Figure and figcaption */
