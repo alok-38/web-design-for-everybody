@@ -126,6 +126,28 @@ figcaption {
 	border-bottom: 2px #E31937 solid;
 }
 
+/* Atleast one nth child */
+/* Target every odd image inside figure containers */
+.figure-container .s figure:nth-child(odd) img {
+	transition: transform 0.3s ease-in-out;
+}
+
+/* On hover, scale the image */
+.figure-container .s figure:nth-child(odd) img:hover {
+	transform: scale(1.1);
+}
+
+/* Target every even image inside figure containers */
+.figure-container .x figure:nth-child(even) img {
+	transition: transform 0.3s ease-in-out;
+}
+
+/* On hover, scale the image */
+.figure-container .x figure:nth-child(even) img:hover {
+	transform: scale(1.1);
+}
+
+
 /* footer */
 footer {
 	background-color: #E31937;
