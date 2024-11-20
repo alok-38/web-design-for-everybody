@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing the Style</title>
+</head>
+
+<body>
+    <h1>Changing the Style</h1>
+    <p>JavaScript can change the style of an HTML element.</p>
+    <button id="open">Open</button>
+    <button id="close">Close</button>
+    <p id="demo" style="display:none;">Extra details...You can open and close this paragraph using the buttons above.
+    </p>
+
+    <script>
+        const openBtn = document.getElementById('open');
+        const closeBtn = document.getElementById('close');
+        const demoPara = document.getElementById('demo');
+
+        // Show the paragraph when the "Open" button is clicked
+        openBtn.addEventListener('click', () => {
+            demoPara.style.display = 'block';
+        });
+
+        // Hide the paragraph when the "Close" button is clicked
+        closeBtn.addEventListener('click', () => {
+            demoPara.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
