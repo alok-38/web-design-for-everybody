@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover over image</title>
+    <style>
+        div {
+            background-color: blueviolet;
+            color: #ffffff;
+            width: 30%;
+            margin: 15px auto;
+            padding: 2em;
+            text-align: center;
+        }
+
+        img {
+            display: inline-flex;
+            height: 300px;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="message">
+        Hover over an image to display the alt text.
+    </div>
+
+    <img class="preview" alt="Styling with a Bandana"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover="showProperties(this)"
+        onmouseleave="resetMessage()">
+
+    <img class="preview" alt="With My Boy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG"
+        onmouseover="showProperties(this)" onmouseleave="resetMessage()">
+
+    <img class="preview" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt="Young Puppy"
+        onmouseover="showProperties(this)" onmouseleave="resetMessage()">
+
+    <script>
+        function showProperties(imgElement) {
+            const messageDiv = document.getElementById('message');
+            const altText = imgElement.alt || 'No alt text available';  // Fallback text if alt is missing
+            messageDiv.innerHTML = altText;  // Display the alt text of the hovered image
+        }
+
+        function resetMessage() {
+            const messageDiv = document.getElementById('message');
+            messageDiv.innerHTML = 'Hover over an image';  // Reset the message when mouse leaves the image
+        }
+    </script>
+</body>
+
+</html>
