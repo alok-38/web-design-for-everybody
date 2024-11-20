@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <h1>JavaScript Date Function</h1>
+    <p id="demo">What day are we in?</p>
+    <button>Display Date</button>
+    <script>
+        // Reference to the button element
+        const buttonEl = document.querySelector('button');
+        // Create a new para element
+        const paraEl = document.createElement('p');
+        // Append the same to the body
+        document.body.appendChild(paraEl);
+        // Function to display date
+        const displayDate = () => {
+            // Create a new date object and append the same to the para
+            const date = new Date();
+            paraEl.textContent = `Today is ${date.toDateString()}`;
+        }
+        // Add event listener to the button
+        buttonEl.addEventListener('click', displayDate);
+    </script>
+</body>
+
+</html>
