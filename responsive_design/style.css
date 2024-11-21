@@ -20,6 +20,11 @@ header h2 {
     text-transform: uppercase;
 }
 
+main {
+    max-width: 980x;
+    margin: auto;
+}
+
 header h1,
 header h2 {
     margin: 15px 0;
@@ -30,6 +35,31 @@ main p:first-child {
     margin: 20px 0;
 }
 
-div {
+.column {
     width: 25%;
+    float: left;
+    margin-left: 5%;
+}
+
+.column h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.column p {
+    line-height: 1.6;
+}
+
+@media (max-width:768px) {
+    .column {
+        width: 100%;
+        display: block;
+        padding: 2em;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
 }
