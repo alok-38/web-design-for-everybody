@@ -53,7 +53,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 80%;
-    margin: 15px auto;
+    margin: 25px auto;
     grid-gap: 25px;
 }
 
