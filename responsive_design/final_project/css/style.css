@@ -1,0 +1,91 @@
+/* General Styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dedede;
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    margin-top: 20px;
+}
+
+/* General Image Styling */
+img {
+    border: 5px solid blue;
+    border-radius: 35px;
+    /* Circular images for mobile and tablet */
+    width: 100%;
+}
+
+.label {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Dark Mode: Apply when the user prefers dark theme */
+@media (prefers-color-scheme: dark) {
+    .figure-img {
+        background-color: #333;
+        /* Dark background for images */
+        color: #FFD700;
+        /* Lighter, yellow-ish text */
+        border-color: black;
+        /* Dark border */
+    }
+}
+
+/* Reduced motion: Disable smooth scrolling if user prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+        /* Disable smooth scrolling */
+    }
+}
+
+/* Large Screens (992px and up) */
+@media (min-width: 992px) {
+
+    /* Remove border-radius from figures on large screens */
+    img {
+        border-radius: 0;
+        /* Remove the rounded corners */
+    }
+
+    /* Every third figure in the gallery should span two columns */
+    .row-cols-lg-4 .col:nth-child(3n) {
+        grid-column: span 2;
+        /* Make every 3rd figure span both columns */
+    }
+}
+
+/* Tablet Screens (772px and up) */
+@media (min-width: 772px) {
+
+    /* Set circular images for tablet */
+    .figure-img {
+        border-radius: 50%;
+        /* Circular figures for tablet view */
+    }
+
+    /* Last figure should span both columns */
+    .row-cols-sm-2 .col:last-child {
+        grid-column: span 2;
+        /* Make the last figure span both columns on tablet */
+    }
+}
