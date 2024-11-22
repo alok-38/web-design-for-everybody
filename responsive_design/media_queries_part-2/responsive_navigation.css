@@ -29,4 +29,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 1rem;
+}
+
+/* applies styles to all types of devices, but only if the viewport width is at least 900 pixels. */
+@media all and (min-width:900px) {
+    body {
+        background-color: lightblue;
+    }
+    section {
+        margin: 1rem;
+        line-height: 1.6;
+    }
 }
