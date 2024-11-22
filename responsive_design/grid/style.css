@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #49d6ff;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 4vw;
+    margin-top: 15px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+ul a {
+    color: inherit;
+    font-weight: 600;
+}
+
+main {
+    max-width: 1040px;
+    margin: 25px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 25px;
+    }
+
+    .grid img {
+        display: block;
+        margin: auto;
+    }
+}
